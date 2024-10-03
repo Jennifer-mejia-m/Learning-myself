@@ -12,6 +12,10 @@ public class misce {
         System.out.println(str2.charAt(8));
         System.out.println(str2.toLowerCase());
         
+        double numeroDecimal = 3.14;
+        int deci = (int) numeroDecimal;
+
+        System.out.println(numeroDecimal);
         
     }
     

@@ -1,3 +1,4 @@
+package Miscelaneos.Cat;
 public class cat {
 
     private String name;
@@ -10,13 +11,18 @@ public class cat {
         this.age = 0;
     }
 
+    public cat(String name, int age){
+        this.name=name;
+        this.age=age;
+    }
+
     //getters and setters
 
     public String getName() {
         return name;
     }
 
-    public void setName() {
+    public void setName(String name) {
         this.name = name;
     }
     
@@ -24,7 +30,7 @@ public class cat {
         return age;
     }
 
-    public void setAge() {
+    public void setAge(int age) {
         this.age = age;
     }
 }
