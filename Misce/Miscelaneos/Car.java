@@ -18,8 +18,11 @@ public class Car {
 
     public static void main(String[] args) {
         
-        Car car1 = new Car(null," ",2003);
+        Car car1 = new Car("toyota","",2005);
         System.out.println(car1.make+" "+car1.model+" "+car1.year);
+
+        Car car2 = new Car("audi","carizimo",-1);
+        System.out.println(car2.make+" "+car2.model+" "+car2.year);
     }
 
 }

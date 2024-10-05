@@ -1,3 +1,5 @@
+package Miscelaneos;
+
 public class misce {
 
     public static void main(String[] args) {
