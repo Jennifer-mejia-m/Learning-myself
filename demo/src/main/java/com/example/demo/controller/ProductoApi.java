@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -71,6 +72,12 @@ public class ProductoApi {
         return productoService.findById(id);
     }
     
+    @GetMapping("/buscar/{a}")
+    public Optional<Producto> findByTermina(@PathVariable("a") String a) {
+        return productoService.productosTerminal(a);
+    }
+    
+
     //delete a product
 
     @DeleteMapping("/{id}")

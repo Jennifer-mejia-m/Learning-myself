@@ -1,6 +1,7 @@
 package com.example.demo.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -39,6 +40,11 @@ public class ProductoService {
     public Producto updateProducto(Producto producto){
         return productoRepository.save(producto);
     }
+
+    public Optional<Producto> productosTerminal(String a){
+        return productoRepository.findByTerminal(a);
+    }
+
 
     //eliminate a producto
 
