@@ -41,7 +41,7 @@ public class ProductoService {
         return productoRepository.save(producto);
     }
 
-    public Optional<Producto> productosTerminal(String a){
+    public List<Producto> productosTerminal(String a){
         return productoRepository.findByTerminal(a);
     }
 

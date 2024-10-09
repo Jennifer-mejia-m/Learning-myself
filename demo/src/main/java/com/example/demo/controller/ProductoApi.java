@@ -73,7 +73,7 @@ public class ProductoApi {
     }
     
     @GetMapping("/buscar/{a}")
-    public Optional<Producto> findByTermina(@PathVariable("a") String a) {
+    public List<Producto> findByTermina(@PathVariable("a") String a) {
         return productoService.productosTerminal(a);
     }
     
