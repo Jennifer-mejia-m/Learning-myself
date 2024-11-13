@@ -11,7 +11,7 @@ print (a/b) #con decimales
 print (a+b)
 
 print (a-b) 
-print (a**b) 
+print (a**b) #potenciación
 
 print(6/4)
 print(6//4)
